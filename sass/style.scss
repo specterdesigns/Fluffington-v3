@@ -1,0 +1,27 @@
+@import 'inc/imports';
+
+//debugger tool
+body{
+  //@include debugger();
+}
+//Basic Container
+.container {
+    @include container-fluid();
+    @include container-spacer();
+}
+//Basic Row
+.row {
+    @include flex-row();
+}
+
+//Basic Grid
+.grid{
+	@include flex-grid(6);
+	background: #1c86f2;
+	padding-right:20px;
+	color: $white;
+	padding: 15px 0 15px 10px;
+	&:nth-child(2){
+		margin-left: 1.6%;
+	}
+}

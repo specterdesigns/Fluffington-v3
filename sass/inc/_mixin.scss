@@ -1,0 +1,30 @@
+//font smoothing
+@mixin font-smoothing {
+		-moz-osx-font-smoothing: grayscale;
+		-webkit-font-smoothing: antialiased;
+	}
+@mixin line-height($heightValue: 20 ){
+	line-height: $heightValue + px; //fallback for old browsers
+	line-height: (0.0625 * $heightValue) + rem;
+}
+
+// Clearfix
+@mixin clearfix {
+    &:after {
+        content: '';
+        display: table;
+        clear: both;
+    }
+}
+
+//hide
+@mixin dpi() {
+    display: none !important;
+}
+
+// Opacity with IE 8 support
+@mixin opacity($opacity) {
+  opacity: $opacity;
+  $opacity-ie: $opacity * 100;
+  filter: alpha(opacity = $opacity-ie); //IE8
+}

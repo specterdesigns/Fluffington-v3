@@ -1,0 +1,87 @@
+@mixin container-fluid{
+	margin-left: auto;
+	margin-right: auto;
+	max-height: 1%;
+}
+@mixin container-fixed($width){
+	@include container-fluid();
+	max-width: $width;
+	max-height: 1%;
+}
+@mixin container-spacer {
+  padding-right: $space20;
+  padding-left:  $space20;
+}
+
+@mixin flex-row{
+	@include flexbox();
+	@include flex(0 1 auto);
+	@include flex-direction(row);
+	@include flex-wrap(wrap);
+}
+
+@mixin flex-row-revs() {
+  @include flex-direction(row-reverse);
+}
+
+@mixin flex-col-revs{
+	@include flex-direction(column-reverse);
+}
+
+//grid-system
+
+//Add any number of auto sizing columns to a row. Let the grid figure it out.
+@mixin flex-auto{
+	@include flex-grow(1);
+  @include flex-basis(0);
+	max-width: span(12);
+}
+
+@mixin flex-grid($width){
+	@include flex-basis(span($width));
+	max-width: span($width);
+}
+
+@mixin flex-start(){
+	@include  justify-content(flex-start);
+	text-align: left;
+}
+
+@mixin flex-center(){
+	@include justify-content(center);
+	text-align: center;
+}
+
+@mixin flex-end(){
+	@include justify-content(flex-end);
+	text-align: right;
+}
+
+@mixin flex-top(){
+  @include align-items(flex-start);
+}
+
+@mixin flex-middle(){
+  @include align-items(center);
+}
+
+@mixin flex-bottom(){
+  @include align-items(flex-end);
+}
+
+@mixin flex-around(){
+  @include justify-content(space-around);
+}
+
+@mixin flex-between(){
+  @include justify-content(space-between);
+}
+
+@mixin flex-first(){
+  @include order(-1);
+}
+
+@mixin flex-last(){
+  @include order(1);
+}
+

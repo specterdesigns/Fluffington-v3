@@ -1,0 +1,56 @@
+//colors
+	$white:#fff;
+	$black:#000;
+	$prime-color:#007AFF;
+	$accent-color:#5AC8FA;
+
+// Button
+	$button-primary-color: $accent-color !default;
+	$button-primary-text-color: #fff !default;
+	$button-secondary-color: #313439 !default;
+	$button-secondary-text-color: #fff !default;
+	$hvr-color: $accent-color;
+	$main-btn-txtcolor: #fff;
+	
+//Base
+	$baseline:23px;
+	$link-color: $accent-color;
+
+// General Gray tone
+	$shade50 : #FAFAFA;
+	$shade100: #F5F5F5;
+	$shade200: #EEEEEE;
+	$shade300: #E0E0E0;
+	$shade400: #BDBDBD;
+	$shade500: #9E9E9E;
+	$shade600: #757575;
+	$shade700: #616161;
+	$shade800: #424242;
+	$shade900: #212121;
+
+//spacing
+	$space : 10px;
+	$space20 : $space*2;
+	$space30 : $space*3;
+	$space40 : $space*4;
+	$space50 : $space*5;
+	$space60 : $space*6;
+	$space70 : $space*7;
+	$space80 : $space*8;
+	$space90 : $space*9;
+	$space100: $space*10;
+
+//typo
+	$heading: 'Crimson Text', serif;
+	$paragraph: 'Oxygen', sans-serif;;
+
+//Nav vars
+	$navHover-color: tomato;
+	$navColor: #ddccd5;
+//=MobileNavColor
+	$mobileNavColor: $white;
+//=SF-SKIN
+	$dropDownColor: $white;
+//=Link Colors
+	$mobileBgColor : $shade50;
+//=Mobile 2nd lvl btn color
